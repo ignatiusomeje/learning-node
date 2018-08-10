@@ -18,9 +18,9 @@ hbs.registerHelper('streamIt',(text) => {
 
 app.set('view engine', 'hbs');
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -39,6 +39,10 @@ app.get('/',(req, res) => {
     pageTitle : 'HOME PAGE',
     welcome: 'welcome to our site'
   });
+});
+
+app.get('/project',(req, res) => {
+  res.render('project.hbs')
 });
 
 app.get('/about', (req, res) => {

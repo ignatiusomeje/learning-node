@@ -1,0 +1,3 @@
+[submodule "node-chat-app"]
+	path = node-chat-app
+	url = C:/Program Files/Git/node-chat-app
